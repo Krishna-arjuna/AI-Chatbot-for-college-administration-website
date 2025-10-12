@@ -1,42 +1,3 @@
-📁 File Structure
-
-local-ai-chatbot/
-│
-├── backend/
-│   ├── app.py              # FastAPI backend (handles API routes)
-│   ├── rag_engine.py       # RAG logic: embeddings, retrieval, and generation
-│   ├── data/               # Folder containing user PDFs/text data
-│   └── vector_store/       # Chroma vector database
-│
-├── frontend/
-│   ├── index.html          # Chat UI
-│   ├── style.css           # Modern chat styling
-│   └── script.js           # Frontend logic for sending/receiving messages
-│
-└── requirements.txt        # Python dependencies
-
-🚀Seatup Instructions
-
-git clone https://github.com/yourusername/local-ai-chatbot.git
-cd local-ai-chatbot
-
-# Seatup a virtual enviornment
-python -m venv venv
-source venv/bin/activate       # (Mac/Linux)
-venv\Scripts\activate          # (Windows)
-pip install -r requirements.txt
-
-# run the backend and install the dependencies
-cd backend
-pip install -r requirements.txt
-
-# run ollama in your local server
-ollama pull llama3
-ollama run llama3
-
-# Start the server
-uvicorn app:app --reload
-
 # AI Chatbot Project
 
 ## Overview
@@ -63,19 +24,43 @@ This project is an AI-powered chatbot built using Python. It leverages natural l
   - Optional: [Chroma](https://www.trychroma.com/) or other vector DB for knowledge retrieval
 - **Database:** MongoDB / SQLite (optional)
 
+🚀Seatup Instructions
+
+git clone https://github.com/yourusername/local-ai-chatbot.git
+cd local-ai-chatbot
+
+# Seatup a virtual enviornment
+python -m venv venv
+source venv/bin/activate       # (Mac/Linux)
+venv\Scripts\activate          # (Windows)
+pip install -r requirements.txt
+
+# run the backend and install the dependencies
+cd backend
+pip install -r requirements.txt
+
+# run ollama in your local server
+ollama pull llama3
+ollama run llama3
+
+# Start the server
+uvicorn app:app --reload
 
 
 ai-chatbot/
+📁 File Structure
+
+local-ai-chatbot/
 │
-├── backend/ # Python backend
-│ ├── app.py # Main FastAPI app
-│ ├── requirements.txt # Python dependencies
-│ └── modules/ # Helper modules for chatbot logic
+├── backend/
+│   ├── app.py              # FastAPI backend (handles API routes)
+│   ├── rag_engine.py       # RAG logic: embeddings, retrieval, and generation
+│   ├── data/               # Folder containing user PDFs/text data
+│   └── vector_store/       # Chroma vector database
 │
-├── frontend/ # Optional frontend
-│ ├── index.html
-│ ├── styles.css
-│ └── script.js
+├── frontend/
+│   ├── index.html          # Chat UI
+│   ├── style.css           # Modern chat styling
+│   └── script.js           # Frontend logic for sending/receiving messages
 │
-├── README.md
-└── .gitignore
+└── requirements.txt        # Python dependencies
