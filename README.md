@@ -65,3 +65,17 @@ This project is an AI-powered chatbot built using Python. It leverages natural l
 
 
 
+ai-chatbot/
+│
+├── backend/ # Python backend
+│ ├── app.py # Main FastAPI app
+│ ├── requirements.txt # Python dependencies
+│ └── modules/ # Helper modules for chatbot logic
+│
+├── frontend/ # Optional frontend
+│ ├── index.html
+│ ├── styles.css
+│ └── script.js
+│
+├── README.md
+└── .gitignore
