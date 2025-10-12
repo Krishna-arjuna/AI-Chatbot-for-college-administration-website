@@ -53,14 +53,15 @@ ai-chatbot/
 local-ai-chatbot/
 │
 ├── backend/
-│   ├── app.py              # FastAPI backend (handles API routes)
-│   ├── rag_engine.py       # RAG logic: embeddings, retrieval, and generation
-│   ├── data/               # Folder containing user PDFs/text data
-│   └── vector_store/       # Chroma vector database
+│   ├── app.py            # FastAPI backend (handles API routes)
+│   ├── rag_engine.py     # RAG logic: embeddings, retrieval, and generation
+│   ├── data/             # Folder containing user PDFs/text data
+│   └── vector_store/     # Chroma vector database
 │
 ├── frontend/
-│   ├── index.html          # Chat UI
-│   ├── style.css           # Modern chat styling
-│   └── script.js           # Frontend logic for sending/receiving messages
+│   ├── index.html        # Chat UI
+│   ├── style.css         # Modern chat styling
+│   └── script.js         # Frontend logic for sending/receiving messages
 │
-└── requirements.txt        # Python dependencies
+└── requirements.txt      # Python dependencies
+
